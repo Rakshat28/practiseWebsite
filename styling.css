@@ -1,0 +1,137 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+body{
+    background-color: #081b29;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 15px 5%;
+    width: 100%;
+    background:transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+
+}
+.logo{
+    font-size: 27px;
+    color:White;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.2s;
+
+}
+.logo:hover{
+    transform: scale(1.05);
+}
+.navbar a{
+    font-size: 17px;
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    margin-left: 20px;
+    transition: color 0.3s;
+
+}
+.navbar a.active{
+    font-size: 20px;
+}
+.navbar a:hover,
+.navbar a.active{
+    color: rgb(12, 199, 199);
+
+}
+.home{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 5%;
+
+}
+.home-content{
+    max-width: 550px;
+    
+}
+
+.home-content h1{
+    font-size: 56px;
+    font-weight: 700;
+    color: white;
+}
+
+.home-content h3{
+    font-size: 30px;
+    font-weight: 700;
+    color:rgb(23, 195, 195);
+}
+.home-content p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 17px;
+    line-height: 23px;
+}
+.button-box{
+    display: inline-flex;
+    width: 275px;
+    justify-content: space-between;
+}
+.button{
+    padding:15px;
+    margin-top: 10px;
+    border: solid;
+    border-radius: 15px;
+    background: rgb(18, 125, 125) ;
+    border-color:rgb(18, 125, 125) ;
+    color:white ;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    align-items: center;
+    justify-content:center;
+    transition: color 0.3s, background-color 0.3s,border-color 0.3s;
+
+    
+}
+.button:hover{
+    background-color:rgb(255, 255, 255);
+    color:rgb(18, 125, 125);
+    border-color: white;
+    font-weight: 900;
+}
+.home-sign {
+    position: absolute;
+    bottom: 40px;
+    width: 110px;
+    display: flex;
+    justify-content: space-between;
+}
+.home-sign a{
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    color: white;
+}
+.grid-container{
+    display: flex;
+}
+.side-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.4;
+    transition: opacity 1s;
+}
+.side-image:hover{
+    opacity: 2;
+}
